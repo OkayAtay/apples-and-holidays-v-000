@@ -41,7 +41,7 @@ end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   supply_array.flatten
-  holiday_hash[:season][:holiday_name]<<supply_array
+  holiday_hash[:season][:holiday_name]<<supply_array.flatten
 
   # code here
   # remember to return the updated hash
